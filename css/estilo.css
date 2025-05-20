@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+section {min-height: 100vh;}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.header {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    position: sticky;
+}
+
+.header h1 {
+    font-size: 2.0em;
+    font-weight: 500;
+}
+
+.navigation {
+    background-color: rgba(30, 58, 138, 0.9);
+    position: sticky;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.navigation li {
+    margin: 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.navigation a:hover {
+    color: blue;
+}
+
+#section1 {
+    text-align: center;
+    padding: 30px;
+    margin: 20px;
+}
+
+.produtos {
+    padding: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.produto {
+    background-color: #f4f4f4;
+    border:  1px solid #e0e0e0;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+}
+
+.produto img {
+    width: 100%;
+}
+
+.produto h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.produto p {
+    font-size: 1.1em;
+    color: #1e3a8a;
+}
+
+.produto button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding:  10px 20px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.produto button:hover {
+    background-color: rgb(1, 1, 87);
+}
+
+#section2 {
+    text-align: center;
+    padding: 30px;
+    margin: 20px;
+}
+
+.produto figcaption p.oldprice {
+    font-size: 0.9em;
+    text-decoration:line-through;
+    color: #333;
+}
+
+#section3, #section4 {
+    min-height: 100vh;
+    text-align: center;
+    padding: 30px;
+    margin: 20px;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 20px;
+}
+
+form {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #e0e0e0;
+}
+
+fieldset {
+    border: none;
+    display: grid;
+    gap: 10px;
+}
+
+input, select, textarea, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.galeria-simples {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    padding: 30px;
+    max-width: 100%;
+}
+
+.galeria-simples img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    padding: 10px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+footer a:hover {
+    color: #2563eb;
+}
