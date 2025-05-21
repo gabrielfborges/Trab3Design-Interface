@@ -12,6 +12,9 @@ body {
     padding: 5px;
     text-align: center;
     position: sticky;
+    top: 0;
+    height: 60px;
+    z-index: 999;
 }
 
 .header h1 {
@@ -22,22 +25,29 @@ body {
 .navigation {
     background-color: rgba(30, 58, 138, 0.9);
     position: sticky;
+    top: 60px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navigation ul {
     display: flex;
-    justify-content: space-evenly;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .navigation li {
-    margin: 20px;
+    margin: 0 20px;
 }
 
 .navigation a {
     text-decoration: none;
     color: white;
     font-weight: 500;
+    display: block;
 }
 
 .navigation a:hover {
