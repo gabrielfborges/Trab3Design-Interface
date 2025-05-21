@@ -40,7 +40,7 @@ body {
 }
 
 .navigation li {
-    margin: 0 20px;
+    margin: 0 10px;
 }
 
 .navigation a {
@@ -61,7 +61,7 @@ body {
 }
 
 .produtos {
-    padding: 10%;
+    padding: 30px;
     display: flex;
     justify-content: space-evenly;
     gap: 20px;
